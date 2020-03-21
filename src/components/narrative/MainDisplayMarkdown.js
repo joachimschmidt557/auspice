@@ -95,6 +95,20 @@ const Container = styled.div`
     margin-bottom: 2px;
   }
 
+  table, th, td {
+    border: 1px solid ${(props) => props.theme.unselectedColor};
+  }
+
+  th {
+    text-align: center;
+    background-color: ${(props) => props.theme.background};
+  }
+
+  th, td {
+    padding: 3px;
+    vertical-align: middle;
+  }
+
 `;
 
 const EXPERIMENTAL_MainDisplayMarkdown = ({narrativeBlock, width, mobile}) => {
